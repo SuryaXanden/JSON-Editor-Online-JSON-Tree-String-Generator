@@ -6,7 +6,8 @@ app = Flask(__name__)
 CORS(app)
 
 @app.route( '/' , methods = [ 'POST' ] )
-'''
+def index():
+    '''
     cURL Request sample:
     --------------------
 
@@ -15,8 +16,8 @@ CORS(app)
     -H 'Content-Type: text/plain' \
     -H 'Host: localhost:5000' \
     -d '<div class="jsoneditor-treepath" tabindex="0"><span class="jsoneditor-treepath-element">object</span><span class="jsoneditor-treepath-seperator">►</span><span class="jsoneditor-treepath-element">object</span><span class="jsoneditor-treepath-seperator">►</span><span class="jsoneditor-treepath-element">a</span></div>'
-'''
-def index():
+    '''
+    
     '''
         Built to parse the JSON tree HTML in https://jsoneditoronline.org/
         Inspect and copy the HTML elements in <div class="jsoneditor-treepath" tabindex="0">
